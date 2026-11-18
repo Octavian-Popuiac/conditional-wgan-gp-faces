@@ -2,11 +2,15 @@
 
 This project trains a Wasserstein GAN with gradient penalty to generate 64 × 64 RGB face images. The generator takes random noise and an age group. The critic scores each image together with its age condition.
 
-[Open the notebook](conditional_wgan_gp.ipynb). Selected plots, generated examples and evaluation tables from the completed run are included.
+[Open the notebook](conditional_wgan_gp.ipynb). The notebook includes the saved outputs from the completed run, including dataset previews, duplicate examples, generated faces and evaluation tables.
+
+## Training animation
+
+![Generated faces during training](assets/training_evolution.gif)
 
 ## Dataset
 
-The dataset is the course-provided FACE dataset in HDF5 format. It is excluded from this repository. If you need the prepared file, contact the repository owner about access.
+The dataset is the course-provided FACE dataset in HDF5 format. The HDF5 file is excluded from this repository. Example images are visible in the saved notebook outputs. If you need the prepared file, contact the repository owner about access.
 
 Place the file at `data/UTKFace_64x64.h5`, change `DATA_PATH` in the notebook, or set the `FACE_DATA_PATH` environment variable. A compatible file has the following keys.
 

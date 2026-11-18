@@ -1,0 +1,11 @@
+data/
+results/
+*.h5
+*.hdf5
+*.hdf
+*.keras
+*.weights.h5
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
